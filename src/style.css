@@ -47,7 +47,7 @@ button {
 .nav {
   display: flex;
   gap: 28px;
-  color: #596579;
+  color: #3d4a5f;
   font-size: 14px;
 }
 .nav a:hover {
@@ -113,9 +113,14 @@ button {
   background: #1d4ed8;
 }
 .button-secondary {
-  color: #ffffff;
-  border: 1px solid #64748b;
-  background: transparent;
+  color: #24324a;
+  border: 1px solid #c4cdd9;
+  background: #ffffff;
+}
+.button-secondary:hover {
+  color: #2563eb;
+  border-color: rgba(37, 99, 235, 0.55);
+  background: #f5f8ff;
 }
 .features {
   padding: 72px 8%;
@@ -130,7 +135,7 @@ button {
 }
 .section-heading > p:last-child,
 .laboratory-preview p:last-child {
-  color: #64748b;
+  color: #475569;
   line-height: 1.8;
 }
 .feature-grid {
@@ -155,7 +160,7 @@ button {
   margin: 8px 0;
 }
 .feature-card p {
-  color: #64748b;
+  color: #475569;
   font-size: 14px;
   line-height: 1.9;
 }
@@ -174,7 +179,7 @@ button {
 }
 .site-footer {
   padding: 28px 8%;
-  color: #64748b;
+  color: #475569;
   text-align: center;
   font-size: 13px;
   border-top: 1px solid #e5eaf2;
@@ -269,7 +274,7 @@ button {
   border-top: 1px solid #26354a;
 }
 .planet-stat span {
-  color: #94a3b8;
+  color: #a9b8d0;
   font-size: 12px;
 }
 .planet-stat strong {
@@ -331,4 +336,4290 @@ button {
 #speed-value {
   min-width: 38px;
   color: #93c5fd;
+}
+
+
+/* ===== 科学课程中心 ===== */
+
+.courses-page {
+  min-height: 100vh;
+  padding: 40px 6%;
+  color: #eaf2ff;
+  background:
+    radial-gradient(ellipse at top right, #183b68 0%, transparent 45%),
+    linear-gradient(145deg, #071426, #0b1d35 60%, #081222);
+}
+
+.courses-hero {
+  max-width: 850px;
+  margin: 0 auto 42px;
+  text-align: center;
+}
+
+.courses-eyebrow {
+  margin-bottom: 12px;
+  color: #76c8ff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.courses-hero h1 {
+  margin: 0;
+  font-size: clamp(30px, 5vw, 48px);
+}
+
+.courses-subtitle {
+  margin-top: 16px;
+  color: #afc2dc;
+  line-height: 1.8;
+}
+
+.courses-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.courses-section-heading,
+.course-detail-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.courses-section-heading h2,
+.course-detail-heading h2 {
+  margin-bottom: 8px;
+}
+
+.courses-section-heading p {
+  color: #9fb2cd;
+}
+
+.courses-count,
+.course-meta span,
+.course-category {
+  padding: 6px 10px;
+  border: 1px solid #345475;
+  border-radius: 20px;
+  color: #bfe6ff;
+  font-size: 12px;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 22px;
+  margin-top: 24px;
+}
+
+.course-card {
+  overflow: hidden;
+  border: 1px solid #294565;
+  border-radius: 18px;
+  background: rgba(17, 39, 66, 0.88);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-4px);
+  border-color: #65bfff;
+}
+
+.course-cover {
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 50%, #244f85, transparent 55%),
+    linear-gradient(135deg, #122c4e, #09182c);
+}
+
+.course-planet {
+  font-size: 72px;
+  filter: drop-shadow(0 0 18px rgba(104, 193, 255, 0.45));
+}
+
+.course-category {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(5, 18, 34, 0.7);
+}
+
+.course-card-body {
+  padding: 20px;
+}
+
+.course-meta {
+  display: flex;
+  gap: 8px;
+}
+
+.course-card h3 {
+  margin: 18px 0 10px;
+  font-size: 21px;
+}
+
+.course-card p,
+.course-detail-panel p {
+  color: #b2c4da;
+  line-height: 1.8;
+}
+
+.course-detail-btn,
+.course-start-btn,
+.course-close-btn {
+  cursor: pointer;
+  border-radius: 9px;
+  padding: 11px 16px;
+  font: inherit;
+}
+
+.course-detail-btn,
+.course-start-btn {
+  border: 0;
+  color: #071426;
+  font-weight: 700;
+  background: #78caff;
+}
+
+.course-detail-btn {
+  width: 100%;
+  margin-top: 14px;
+}
+
+.course-detail-btn:hover,
+.course-start-btn:hover {
+  background: #a3dcff;
+}
+
+.course-detail-panel {
+  margin-top: 32px;
+  padding: 26px;
+  border: 1px solid #345475;
+  border-radius: 18px;
+  background: rgba(13, 31, 53, 0.95);
+  scroll-margin-top: 24px;
+}
+
+.course-detail-panel[hidden] {
+  display: none;
+}
+
+.course-detail-panel h3 {
+  margin-top: 24px;
+}
+
+.course-detail-panel li {
+  margin: 10px 0;
+  color: #c5d5e8;
+  line-height: 1.7;
+}
+
+.course-close-btn {
+  border: 1px solid #496886;
+  color: #eaf2ff;
+  background: transparent;
+}
+
+.knowledge-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 14px;
+}
+
+.knowledge-item {
+  padding: 16px;
+  border-radius: 12px;
+  background: #132b47;
+}
+
+.knowledge-item h4 {
+  margin-top: 0;
+  color: #8dd3ff;
+}
+
+.course-start-btn {
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .courses-page {
+    padding: 28px 5%;
+  }
+
+  .courses-section-heading {
+    align-items: flex-start;
+  }
+
+  .course-detail-panel {
+    padding: 18px;
+  }
+}
+
+
+/* ===== 实验任务系统 ===== */
+
+.experiment-tasks {
+  margin-top: 36px;
+  padding: 28px;
+  border: 1px solid #e3e8f2;
+  border-radius: 20px;
+  background: #f8faff;
+}
+
+.task-heading {
+  margin-bottom: 24px;
+}
+
+.task-heading h3 {
+  margin: 8px 0;
+  font-size: 26px;
+}
+
+.task-heading > p {
+  color: #475569;
+  line-height: 1.8;
+}
+
+.task-progress {
+  font-weight: 700;
+  color: #315bd6 !important;
+}
+
+.task-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.task-card {
+  padding: 22px;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  background: #ffffff;
+}
+
+.task-card h4 {
+  margin: 0 0 14px;
+  font-size: 18px;
+}
+
+.task-card h5 {
+  margin: 18px 0 8px;
+  font-size: 14px;
+}
+
+.task-objective,
+.task-card li {
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.task-card ol {
+  padding-left: 22px;
+}
+
+.task-question {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #e8edf5;
+}
+
+.task-question > p {
+  line-height: 1.8;
+}
+
+.task-options {
+  display: grid;
+  gap: 10px;
+}
+
+.task-option {
+  padding: 12px 14px;
+  border: 1px solid #dce3ef;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #24324a;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.task-option:hover {
+  border-color: #6687e8;
+  background: #f3f6ff;
+}
+
+.task-option.is-correct {
+  border-color: #26956b;
+  background: #eaf8f1;
+}
+
+.task-option.is-wrong {
+  border-color: #d95b5b;
+  background: #fff0f0;
+}
+
+.task-feedback {
+  min-height: 24px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.task-feedback.success {
+  color: #16805a;
+}
+
+.task-feedback.error {
+  color: #c33d3d;
+}
+
+@media (max-width: 700px) {
+  .task-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experiment-tasks {
+    padding: 18px;
+  }
+}
+
+.task-status {
+  display: inline-block;
+  margin: 0 0 12px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 13px;
+}
+
+.task-status.is-completed {
+  background: #e8f7ef;
+  color: #16805a;
+  font-weight: 700;
+}
+
+
+/* ===== 学习记录页面 ===== */
+
+.records-page {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 40px 24px 64px;
+}
+
+.records-hero {
+  margin-bottom: 30px;
+  padding: 34px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #edf3ff, #f6f8ff);
+}
+
+.records-hero h1 {
+  margin: 10px 0;
+  color: #1e3156;
+  font-size: 32px;
+}
+
+.records-hero > p:last-child {
+  color: #475569;
+  line-height: 1.8;
+}
+
+.records-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 36px;
+}
+
+.record-stat-card {
+  padding: 22px;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  background: #ffffff;
+}
+
+.record-stat-card p {
+  margin: 0 0 12px;
+  color: #475569;
+  font-size: 14px;
+}
+
+.record-stat-card strong {
+  display: block;
+  color: #243b68;
+  font-size: 28px;
+}
+
+.record-stat-card span {
+  display: block;
+  margin-top: 10px;
+  color: #475569;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.records-task-section {
+  margin-top: 28px;
+}
+
+.records-section-heading {
+  margin-bottom: 18px;
+}
+
+.records-section-heading h2 {
+  margin-bottom: 8px;
+  font-size: 23px;
+}
+
+.records-section-heading p {
+  color: #475569;
+  line-height: 1.7;
+}
+
+.records-task-list {
+  display: grid;
+  gap: 14px;
+}
+
+.record-task-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 22px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: #ffffff;
+}
+
+.record-task-info h3 {
+  margin: 0 0 10px;
+  font-size: 17px;
+}
+
+.record-task-info p {
+  margin: 5px 0;
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.record-task-info .record-answer-info {
+  color: #475569;
+  font-size: 12px;
+}
+
+.record-status {
+  flex-shrink: 0;
+  padding: 7px 12px;
+  border-radius: 8px;
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 13px;
+}
+
+.record-status.done {
+  background: #e8f7ef;
+  color: #16805a;
+  font-weight: 700;
+}
+
+.records-actions {
+  margin-top: 28px;
+}
+
+@media (max-width: 800px) {
+  .records-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .records-page {
+    padding: 24px 16px 40px;
+  }
+
+  .records-hero {
+    padding: 24px;
+  }
+
+  .records-hero h1 {
+    font-size: 26px;
+  }
+
+  .record-task-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+
+/* ===== AI 科学学习导师 ===== */
+
+.ai-tutor-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 24px 64px;
+}
+
+.ai-tutor-header {
+  margin-bottom: 28px;
+  padding: 34px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #edf3ff, #f7f9ff);
+}
+
+.ai-tutor-header h1 {
+  margin: 10px 0;
+  color: #1e3156;
+  font-size: 32px;
+}
+
+.ai-tutor-header > p:last-child {
+  color: #475569;
+  line-height: 1.8;
+}
+
+.ai-chat-panel {
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 12px 36px rgba(31, 53, 91, 0.06);
+}
+
+.ai-chat-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 22px 26px;
+  border-bottom: 1px solid #e8edf5;
+}
+
+.ai-chat-heading h2 {
+  margin: 0 0 6px;
+  font-size: 20px;
+}
+
+.ai-chat-heading p {
+  margin: 0;
+  color: #475569;
+  font-size: 13px;
+}
+
+.ai-online-status {
+  padding: 7px 12px;
+  border-radius: 20px;
+  background: #eaf8f1;
+  color: #16805a;
+  font-size: 12px;
+}
+
+.ai-chat-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-height: 280px;
+  max-height: 480px;
+  overflow-y: auto;
+  padding: 24px;
+  background: #fbfcff;
+}
+
+.ai-message {
+  max-width: 88%;
+}
+
+.ai-message.user {
+  align-self: flex-end;
+}
+
+.ai-message-role {
+  margin-bottom: 7px;
+  color: #475569;
+  font-size: 12px;
+}
+
+.ai-message-content {
+  padding: 14px 16px;
+  border: 1px solid #e4eaf3;
+  border-radius: 14px;
+  background: #ffffff;
+  color: #334155;
+  font-size: 14px;
+  line-height: 1.9;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.ai-message.user .ai-message-content {
+  border-color: #d8e4ff;
+  background: #edf3ff;
+}
+
+.ai-quick-questions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 24px 8px;
+}
+
+.ai-quick-questions p {
+  width: 100%;
+  margin: 0 0 2px;
+  color: #475569;
+  font-size: 13px;
+}
+
+.ai-quick-questions button {
+  padding: 9px 12px;
+  border: 1px solid #dce5f5;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #315bd6;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.ai-quick-questions button:hover {
+  background: #f1f5ff;
+}
+
+.ai-chat-form {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  padding: 18px 24px;
+}
+
+.ai-chat-form textarea {
+  flex: 1;
+  min-width: 0;
+  resize: vertical;
+  padding: 13px 14px;
+  border: 1px solid #dce3ef;
+  border-radius: 12px;
+  outline: none;
+  font: inherit;
+  line-height: 1.6;
+}
+
+.ai-chat-form textarea:focus {
+  border-color: #6687e8;
+  box-shadow: 0 0 0 3px rgba(102, 135, 232, 0.12);
+}
+
+.ai-chat-form button {
+  flex-shrink: 0;
+  padding: 13px 18px;
+  border: none;
+  border-radius: 12px;
+  background: #315bd6;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ai-chat-form button:hover {
+  background: #2549b5;
+}
+
+.ai-chat-tip {
+  margin: 0;
+  padding: 0 24px 20px;
+  color: #475569;
+  font-size: 12px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .ai-tutor-page {
+    padding: 24px 14px 40px;
+  }
+
+  .ai-tutor-header {
+    padding: 24px;
+  }
+
+  .ai-tutor-header h1 {
+    font-size: 26px;
+  }
+
+  .ai-chat-heading {
+    padding: 18px;
+  }
+
+  .ai-chat-messages {
+    padding: 18px;
+  }
+
+  .ai-message {
+    max-width: 96%;
+  }
+
+  .ai-chat-form {
+    align-items: stretch;
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .ai-chat-form button {
+    align-self: flex-end;
+  }
+}
+
+/* ================================================================ */
+/* 新功能样式：导航 / Markdown / AI 助教 / 实验 / 测评 / 仪表盘       */
+/* ================================================================ */
+
+/* ---------------- 导航 ---------------- */
+
+.nav {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 14px 22px;
+}
+
+.nav a.is-active {
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.hero-actions .button-secondary {
+  border-color: rgba(255, 255, 255, 0.55);
+}
+
+.feature-grid-six {
+  margin-top: 12px;
+}
+
+a.feature-card {
+  display: block;
+  color: inherit;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+a.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(24, 49, 83, 0.1);
+}
+
+/* ---------------- Markdown 排版 ---------------- */
+
+.markdown-body {
+  line-height: 1.85;
+  word-break: break-word;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4 {
+  margin: 18px 0 8px;
+  line-height: 1.4;
+  color: #183153;
+}
+
+.markdown-body h2 {
+  font-size: 17px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e7eaf0;
+}
+
+.markdown-body h3 {
+  font-size: 15.5px;
+}
+
+.markdown-body h4 {
+  font-size: 14.5px;
+}
+
+.markdown-body p {
+  margin: 8px 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  margin: 8px 0;
+  padding-left: 22px;
+}
+
+.markdown-body li {
+  margin: 4px 0;
+}
+
+.markdown-body strong {
+  color: #1d4ed8;
+}
+
+.markdown-body code {
+  padding: 2px 6px;
+  border-radius: 5px;
+  background: #eef2f8;
+  color: #b91c1c;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 0.9em;
+}
+
+.markdown-body pre {
+  padding: 14px;
+  overflow-x: auto;
+  border-radius: 10px;
+  background: #101d32;
+}
+
+.markdown-body pre code {
+  padding: 0;
+  background: transparent;
+  color: #e2e8f0;
+}
+
+.markdown-body blockquote {
+  margin: 10px 0;
+  padding: 8px 14px;
+  border-left: 4px solid #93c5fd;
+  border-radius: 0 8px 8px 0;
+  background: #f1f6ff;
+  color: #475569;
+}
+
+.markdown-body table {
+  width: 100%;
+  margin: 10px 0;
+  border-collapse: collapse;
+  display: block;
+  overflow-x: auto;
+}
+
+.markdown-body th,
+.markdown-body td {
+  padding: 8px 12px;
+  border: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+.markdown-body th {
+  background: #f1f5f9;
+}
+
+.markdown-body .katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 6px 2px;
+}
+
+/* ---------------- AI 助教增强 ---------------- */
+
+.ai-tutor-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.typing-dots {
+  display: inline-flex;
+  gap: 5px;
+  padding: 4px 0;
+}
+
+.typing-dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #60a5fa;
+  animation: typing-bounce 1.2s infinite ease-in-out;
+}
+
+.typing-dots span:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.typing-dots span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes typing-bounce {
+  0%, 60%, 100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  30% {
+    transform: translateY(-6px);
+    opacity: 1;
+  }
+}
+
+.ai-message.is-loading .ai-message-content {
+  padding: 6px 0;
+}
+
+.ai-message-actions {
+  margin-top: 6px;
+}
+
+.ai-regenerate-btn {
+  padding: 4px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #475569;
+  font-size: 12.5px;
+  cursor: pointer;
+}
+
+.ai-regenerate-btn:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+.ai-error-box {
+  color: #b91c1c;
+}
+
+.ai-error-box p {
+  margin: 0 0 10px;
+}
+
+.ai-error-box .button {
+  min-height: 36px;
+  color: #b91c1c;
+  border-color: #fca5a5;
+}
+
+.ai-message.is-error {
+  border-color: #fecaca;
+  background: #fef2f2;
+}
+
+/* ---------------- 通用面板 ---------------- */
+
+.card-panel {
+  margin: 0 8% 28px;
+  padding: 30px;
+  border: 1px solid #e5eaf2;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(24, 49, 83, 0.05);
+}
+
+/* ---------------- 实验指导 ---------------- */
+
+.experiment-hero,
+.quiz-hero,
+.dashboard-hero {
+  padding: 56px 8% 30px;
+}
+
+.experiment-resume {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+  border-left: 5px solid #2563eb;
+}
+
+.experiment-resume h3 {
+  margin: 0 0 6px;
+}
+
+.experiment-resume p {
+  margin: 0;
+  color: #475569;
+}
+
+.experiment-resume-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.experiment-courses,
+.quiz-courses {
+  padding: 8px 8% 0;
+}
+
+.experiment-loading,
+.experiment-error {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.experiment-error h2 {
+  color: #b91c1c;
+}
+
+.experiment-error-actions,
+.experiment-plan-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 22px;
+}
+
+.experiment-plan-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.experiment-plan-heading h2 {
+  margin: 6px 0;
+}
+
+.experiment-course {
+  color: #475569;
+  margin: 0;
+}
+
+.experiment-section {
+  margin-top: 22px;
+}
+
+.experiment-section h3,
+.experiment-section h4 {
+  margin: 0 0 8px;
+}
+
+.experiment-section p {
+  margin: 0;
+  color: #334155;
+  line-height: 1.85;
+}
+
+.experiment-checklist,
+.experiment-safety ul,
+.experiment-step-overview {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.experiment-checklist li,
+.experiment-safety li,
+.experiment-step-overview li {
+  margin: 6px 0;
+  line-height: 1.7;
+}
+
+.experiment-safety {
+  padding: 18px 20px;
+  border-radius: 12px;
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+}
+
+.experiment-safety h3 {
+  color: #b45309;
+}
+
+.experiment-tip {
+  padding: 16px 20px;
+  border-radius: 12px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+}
+
+.experiment-step-overview p {
+  color: #475569;
+  font-size: 13.5px;
+}
+
+.experiment-progress {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 24px 0 8px;
+}
+
+.progress-dot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #e2e8f0;
+  color: #475569;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.progress-dot.is-current {
+  background: #2563eb;
+  color: #fff;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+.progress-dot.is-done {
+  background: #22c55e;
+  color: #fff;
+}
+
+.progress-line {
+  width: 26px;
+  height: 2px;
+  background: #cbd5e1;
+}
+
+.step-card {
+  margin-top: 20px;
+  padding-top: 8px;
+}
+
+.step-index {
+  color: #2563eb;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.step-card h3 {
+  margin: 4px 0 12px;
+  font-size: 22px;
+}
+
+.step-card textarea,
+.feedback-panel textarea,
+.quiz-short-input {
+  width: 100%;
+  margin-top: 8px;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font: inherit;
+  line-height: 1.7;
+  resize: vertical;
+}
+
+.step-card textarea:focus,
+.feedback-panel textarea:focus,
+.quiz-short-input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.step-submit-row,
+.step-nav-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.step-analyze-hint {
+  color: #475569;
+  font-size: 13px;
+}
+
+.experiment-actions-inline {
+  margin: 14px 0;
+}
+
+.ai-analysis {
+  padding: 18px;
+  border-radius: 12px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.ai-analysis.is-error {
+  background: #fef2f2;
+  border-color: #fecaca;
+}
+
+.ai-analysis .button {
+  margin-top: 12px;
+}
+
+.expected-phenomenon {
+  margin-top: 16px;
+  color: #475569;
+}
+
+.expected-phenomenon summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.expected-phenomenon p {
+  margin-top: 8px;
+}
+
+.experiment-summary {
+  margin-top: 18px;
+}
+
+.summary-step {
+  padding: 18px 0;
+  border-bottom: 1px dashed #e2e8f0;
+}
+
+.summary-step:last-child {
+  border-bottom: 0;
+}
+
+.summary-observation {
+  background: #f8fafc;
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+/* ---------------- 智能测评 ---------------- */
+
+.quiz-history {
+  margin-top: 32px;
+}
+
+.quiz-history-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.quiz-empty,
+.dashboard-placeholder {
+  color: #475569;
+  line-height: 1.8;
+}
+
+.quiz-history-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.quiz-history-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 18px;
+  border: 1px solid #e5eaf2;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.quiz-history-item:hover {
+  border-color: #93c5fd;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.08);
+}
+
+.quiz-history-score {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 54px;
+  height: 54px;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.quiz-history-score.is-good {
+  background: #22c55e;
+}
+
+.quiz-history-score.is-mid {
+  background: #f59e0b;
+}
+
+.quiz-history-score.is-low {
+  background: #ef4444;
+}
+
+.quiz-history-meta {
+  flex: 1;
+}
+
+.quiz-history-meta h3 {
+  margin: 0 0 4px;
+  font-size: 16px;
+}
+
+.quiz-history-meta p {
+  margin: 0;
+  color: #475569;
+  font-size: 13.5px;
+}
+
+.quiz-history-view {
+  color: #2563eb;
+  font-size: 14px;
+}
+
+.quiz-paper {
+  margin-top: 24px;
+}
+
+.quiz-question {
+  margin: 26px 0;
+  padding: 20px;
+  border: 1px solid #e5eaf2;
+  border-radius: 14px;
+  background: #fbfdff;
+}
+
+.quiz-question legend {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  width: 100%;
+}
+
+.quiz-q-index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #2563eb;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.quiz-q-type {
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  font-size: 12.5px;
+}
+
+.quiz-q-point {
+  color: #475569;
+  font-size: 12.5px;
+}
+
+.quiz-q-title {
+  margin: 12px 0;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.quiz-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.quiz-options-boolean {
+  grid-template-columns: repeat(2, minmax(0, 160px));
+}
+
+.quiz-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 10px;
+  background: #fff;
+  text-align: left;
+  cursor: pointer;
+  line-height: 1.5;
+  transition:
+    border-color 0.15s ease,
+    background 0.15s ease;
+}
+
+.quiz-option:hover {
+  border-color: #60a5fa;
+  background: #f0f7ff;
+}
+
+.quiz-option.is-selected {
+  border-color: #2563eb;
+  background: #eff6ff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.quiz-option-key {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #e2e8f0;
+  font-size: 13px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.quiz-option.is-selected .quiz-option-key {
+  background: #2563eb;
+  color: #fff;
+}
+
+.quiz-submit-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.quiz-validate-msg {
+  margin: 0;
+  color: #b91c1c;
+  font-size: 14px;
+}
+
+.quiz-result {
+  margin-top: 24px;
+}
+
+.result-summary {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  margin: 22px 0;
+  padding: 24px;
+  border-radius: 14px;
+  background: #f8fafc;
+}
+
+.result-score-ring {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.result-score-ring strong {
+  font-size: 34px;
+  line-height: 1;
+}
+
+.result-score-ring span {
+  font-size: 13px;
+}
+
+.result-score-ring.is-good {
+  background: #22c55e;
+}
+
+.result-score-ring.is-mid {
+  background: #f59e0b;
+}
+
+.result-score-ring.is-low {
+  background: #ef4444;
+}
+
+.result-summary-text {
+  flex: 1;
+}
+
+.result-summary-text p {
+  margin: 4px 0;
+  line-height: 1.8;
+}
+
+.result-tip {
+  color: #475569;
+}
+
+.review-card {
+  margin-top: 14px;
+  padding: 18px 20px;
+  border-radius: 12px;
+  border: 1px solid #e5eaf2;
+}
+
+.review-card.is-correct {
+  border-left: 5px solid #22c55e;
+  background: #f6fef9;
+}
+
+.review-card.is-wrong {
+  border-left: 5px solid #ef4444;
+  background: #fefdfd;
+}
+
+.review-card header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.review-badge {
+  font-weight: 700;
+}
+
+.review-card.is-correct .review-badge {
+  color: #16a34a;
+}
+
+.review-card.is-wrong .review-badge {
+  color: #dc2626;
+}
+
+.review-answers p {
+  margin: 6px 0;
+  line-height: 1.7;
+}
+
+.review-ai-grade,
+.review-explanation {
+  margin-top: 10px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+.review-ai-grade h4,
+.review-explanation h4 {
+  margin: 0 0 6px;
+}
+
+.review-ai-grade p,
+.review-explanation p {
+  margin: 0;
+  color: #475569;
+  line-height: 1.8;
+}
+
+/* ---------------- 学习分析仪表盘 ---------------- */
+
+.dashboard-container {
+  padding-bottom: 30px;
+}
+
+.stat-cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  padding: 0 8%;
+  margin-bottom: 28px;
+}
+
+.stat-card {
+  margin: 0;
+  padding: 22px;
+}
+
+.stat-label {
+  margin: 0 0 10px;
+  color: #475569;
+  font-size: 13.5px;
+}
+
+.stat-value {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  color: #183153;
+}
+
+.stat-sub {
+  margin: 8px 0 0;
+  color: #475569;
+  font-size: 12.5px;
+  line-height: 1.6;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin: 0 8%;
+}
+
+.dashboard-grid .card-panel {
+  margin: 0;
+}
+
+.chart-card h3 {
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+
+.chart-box {
+  width: 100%;
+  height: 260px;
+}
+
+.recommend-heading,
+.wrong-panel h2,
+.feedback-panel h2,
+.export-panel h2 {
+  margin-top: 0;
+}
+
+.recommend-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.recommend-heading p {
+  margin: 6px 0 0;
+  color: #475569;
+}
+
+.recommend-content {
+  margin-top: 16px;
+  padding: 18px 20px;
+  border-radius: 12px;
+  background: #f8fafc;
+  min-height: 80px;
+}
+
+.wrong-item {
+  padding: 14px 0;
+  border-bottom: 1px dashed #e2e8f0;
+}
+
+.wrong-item:last-child {
+  border-bottom: 0;
+}
+
+.wrong-item header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+.wrong-point {
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: #fee2e2;
+  color: #dc2626;
+  font-size: 12.5px;
+}
+
+.wrong-course {
+  color: #475569;
+  font-size: 12.5px;
+}
+
+.wrong-question {
+  margin: 6px 0;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.wrong-answer {
+  margin: 4px 0;
+  color: #475569;
+  line-height: 1.7;
+}
+
+.is-correct-text {
+  color: #15803d;
+}
+
+.wrong-explain {
+  margin: 6px 0 0;
+  color: #475569;
+  font-size: 13.5px;
+  line-height: 1.7;
+}
+
+.feedback-panel form {
+  display: grid;
+  gap: 6px;
+  margin-top: 14px;
+}
+
+.feedback-panel label {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.feedback-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.star-btn {
+  border: 0;
+  background: transparent;
+  color: #cbd5e1;
+  font-size: 26px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.star-btn.is-active,
+.star-btn:hover {
+  color: #f59e0b;
+}
+
+#rating-text {
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+.feedback-panel form .button {
+  justify-self: flex-start;
+  margin-top: 12px;
+}
+
+.feedback-list {
+  margin-top: 20px;
+}
+
+.feedback-item {
+  padding: 14px 0;
+  border-bottom: 1px dashed #e2e8f0;
+}
+
+.feedback-item header {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+.feedback-stars {
+  color: #f59e0b;
+  letter-spacing: 2px;
+}
+
+.feedback-item time {
+  color: #475569;
+  font-size: 12.5px;
+}
+
+.feedback-item p {
+  margin: 4px 0;
+  color: #475569;
+  line-height: 1.7;
+}
+
+.export-note {
+  color: #475569;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* ---------------- 响应式 ---------------- */
+
+@media (max-width: 960px) {
+  .stat-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    margin: 0 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .card-panel {
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 20px;
+  }
+
+  .experiment-courses,
+  .quiz-courses {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .stat-cards {
+    padding: 0 16px;
+    grid-template-columns: 1fr;
+  }
+
+  .quiz-options,
+  .quiz-options-boolean {
+    grid-template-columns: 1fr;
+  }
+
+  .result-summary {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .chart-box {
+    height: 230px;
+  }
+
+  .experiment-resume,
+  .experiment-plan-heading {
+    flex-direction: column;
+  }
+}
+
+/* ================================================================== */
+/* 虚拟实验平台（实验目录 + 五区实验台）                                */
+/* ================================================================== */
+
+.vlab-catalog-page,
+.vlab-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 20px 48px;
+}
+
+/* ---------------- 目录页 ---------------- */
+
+.vlab-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 28px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.vlab-filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.vlab-filter-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #475569;
+  margin-right: 4px;
+}
+
+.vlab-filter-btn {
+  border: 1px solid #d7deea;
+  background: #fff;
+  color: #475569;
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.vlab-filter-btn:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+.vlab-filter-btn.is-active {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #fff;
+}
+
+.vlab-filter-result {
+  font-size: 13px;
+  color: #475569;
+  margin: 0 0 12px;
+}
+
+.vlab-catalog-grid {
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.vlab-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vlab-card-soon {
+  opacity: 0.72;
+}
+
+.vlab-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vlab-card-icon {
+  font-size: 30px;
+}
+
+.vlab-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.vlab-tag {
+  display: inline-block;
+  font-size: 12px;
+  color: #475569;
+  background: #f1f5f9;
+  border-radius: 6px;
+  padding: 2px 8px;
+}
+
+.vlab-tag-physics { background: #eff6ff; color: #1d4ed8; }
+.vlab-tag-chemistry { background: #f0fdf4; color: #15803d; }
+.vlab-tag-biology { background: #fef2f2; color: #b91c1c; }
+.vlab-tag-geography { background: #fffbeb; color: #b45309; }
+
+.vlab-badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 3px 10px;
+}
+
+.vlab-badge-ok {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.vlab-badge-wait {
+  background: #e2e8f0;
+  color: #475569;
+}
+
+.vlab-badge-bad {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.vlab-card-objectives {
+  margin: 0;
+  padding-left: 18px;
+  color: #475569;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.vlab-card-action {
+  margin-top: auto;
+  text-align: center;
+}
+
+.vlab-card-action.is-disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.vlab-principle-panel {
+  margin-top: 20px;
+}
+
+.vlab-principle-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 12px;
+}
+
+.vlab-principle-grid h3 {
+  margin: 0 0 6px;
+  font-size: 15px;
+  color: #183153;
+}
+
+.vlab-principle-grid p {
+  margin: 0;
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* ---------------- 实验台 ---------------- */
+
+.vlab-topbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 18px;
+}
+
+.vlab-back {
+  flex-shrink: 0;
+}
+
+.vlab-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.vlab-title-wrap h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #183153;
+}
+
+.vlab-section {
+  margin-bottom: 18px;
+}
+
+.vlab-zone-title {
+  margin: 0 0 14px;
+  font-size: 17px;
+  color: #183153;
+  cursor: default;
+}
+
+#zone-a summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+#zone-a summary::-webkit-details-marker {
+  display: none;
+}
+
+#zone-a .vlab-zone-title::before {
+  content: "▸ ";
+  color: #2563eb;
+}
+
+#zone-a details[open] .vlab-zone-title::before {
+  content: "▾ ";
+}
+
+.vlab-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px 28px;
+  margin-top: 12px;
+}
+
+.vlab-info-grid h3 {
+  margin: 0 0 6px;
+  font-size: 14px;
+  color: #2563eb;
+}
+
+.vlab-info-grid p,
+.vlab-info-grid li {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.9;
+  color: #475569;
+}
+
+.vlab-info-grid ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.vlab-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 380px;
+  gap: 18px;
+  align-items: start;
+}
+
+.vlab-col-right {
+  position: sticky;
+  top: 16px;
+}
+
+.vlab-ai-section {
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 32px);
+}
+
+/* ---------------- B 区：电路模拟 ---------------- */
+
+.circuit-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-end;
+  margin-bottom: 8px;
+}
+
+.circuit-control {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+  color: #475569;
+}
+
+.circuit-control select {
+  padding: 7px 10px;
+  border: 1px solid #d7deea;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #fff;
+  color: #183153;
+}
+
+#ctrl-switch.is-on {
+  background: #22c55e;
+  border-color: #22c55e;
+  color: #fff;
+}
+
+.circuit-hint {
+  margin: 4px 0 10px;
+  font-size: 13px;
+  color: #475569;
+}
+
+.circuit-canvas-wrap {
+  border: 1px solid #e5eaf2;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #fbfdff 0%, #f4f8ff 100%);
+  overflow: hidden;
+}
+
+.circuit-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 280px;
+  user-select: none;
+}
+
+.wire-node {
+  fill: #fff;
+  stroke: #2563eb;
+  stroke-width: 2.5;
+  cursor: pointer;
+  transition: all 0.12s ease;
+}
+
+.wire-node:hover {
+  fill: #dbeafe;
+  r: 11;
+}
+
+.wire-node.is-selected {
+  fill: #f59e0b;
+  stroke: #d97706;
+}
+
+.wire-node.is-unwired {
+  stroke: #f59e0b;
+  stroke-dasharray: 3 2;
+}
+
+/* ---------------- C 区：测量 ---------------- */
+
+.vlab-status-pill {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.vlab-status-pill strong {
+  font-size: 15px;
+}
+
+.vlab-status-pill span {
+  color: #475569;
+}
+
+.vlab-status-ok {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+}
+
+.vlab-status-ok strong { color: #15803d; }
+
+.vlab-status-warn {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+}
+
+.vlab-status-warn strong { color: #b45309; }
+
+.vlab-status-danger {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+}
+
+.vlab-status-danger strong { color: #b91c1c; }
+
+.vlab-diagnostics {
+  margin: 0 0 12px;
+  padding-left: 20px;
+  color: #b45309;
+  font-size: 13.5px;
+  line-height: 1.8;
+}
+
+.vlab-status-danger ~ .vlab-diagnostics,
+.vlab-diagnostics:has(+ .vlab-measure-grid) {
+  color: #b45309;
+}
+
+.vlab-measure-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.vlab-measure-grid h3,
+.vlab-table + h3,
+#zone-c h3 {
+  margin: 14px 0 8px;
+  font-size: 14.5px;
+  color: #183153;
+}
+
+.vlab-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+}
+
+.vlab-table th,
+.vlab-table td {
+  border: 1px solid #e5eaf2;
+  padding: 7px 10px;
+  text-align: left;
+}
+
+.vlab-table th {
+  background: #f8fafc;
+  color: #475569;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.vlab-table .vlab-num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: #183153;
+}
+
+.vlab-empty {
+  text-align: center;
+  color: #475569;
+  padding: 16px !important;
+}
+
+.vlab-pos-switch {
+  display: flex;
+  gap: 8px;
+}
+
+.vlab-pos-btn {
+  flex: 1;
+  border: 1px solid #d7deea;
+  background: #fff;
+  border-radius: 8px;
+  padding: 8px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #475569;
+  cursor: pointer;
+}
+
+.vlab-pos-btn.is-active {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #fff;
+}
+
+.vlab-pos-detail {
+  margin: 6px 0;
+  font-size: 12.5px;
+  color: #475569;
+}
+
+.vlab-measure-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.vlab-table-wrap {
+  overflow-x: auto;
+}
+
+.vlab-trial-table {
+  min-width: 640px;
+}
+
+.vlab-small-btn {
+  padding: 4px 12px !important;
+  font-size: 12.5px !important;
+}
+
+/* ---------------- D 区：AI 导师 ---------------- */
+
+.vlab-ai-messages {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 320px;
+  max-height: 52vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 4px 4px 10px;
+}
+
+.vlab-ai-bubble {
+  border-radius: 12px;
+  padding: 10px 14px;
+  background: #f4f7fc;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #334155;
+}
+
+.vlab-ai-bubble p {
+  margin: 6px 0;
+}
+
+.vlab-ai-user {
+  align-self: flex-end;
+  background: #2563eb;
+  color: #fff;
+  max-width: 88%;
+  white-space: pre-wrap;
+}
+
+.vlab-ai-loading {
+  background: #f4f7fc;
+}
+
+.vlab-ai-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 8px 0;
+  border-top: 1px solid #eef2f8;
+}
+
+.vlab-chip {
+  border: 1px solid #dbe4f0;
+  background: #fff;
+  color: #2563eb;
+  border-radius: 999px;
+  font-size: 12.5px;
+  padding: 4px 12px;
+  cursor: pointer;
+}
+
+.vlab-chip:hover {
+  background: #eff6ff;
+}
+
+.vlab-ai-input-row {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+  border-top: 1px solid #eef2f8;
+  padding-top: 10px;
+}
+
+.vlab-ai-input-row textarea {
+  flex: 1;
+  resize: none;
+  border: 1px solid #d7deea;
+  border-radius: 10px;
+  padding: 9px 12px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.vlab-ai-input-row textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* ---------------- E 区：记录 ---------------- */
+
+.vlab-record-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  gap: 24px;
+}
+
+.vlab-record-grid h3 {
+  margin: 0 0 10px;
+  font-size: 14.5px;
+  color: #183153;
+}
+
+.vlab-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vlab-steps li {
+  border: 1px solid #e5eaf2;
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: #fbfdff;
+}
+
+.vlab-steps li.is-done {
+  border-color: #bbf7d0;
+  background: #f4fdf6;
+}
+
+.vlab-step-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.vlab-step-check {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1.5px solid #94a3b8;
+  color: #475569;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.vlab-steps li.is-done .vlab-step-check {
+  background: #22c55e;
+  border-color: #22c55e;
+  color: #fff;
+}
+
+.vlab-steps p {
+  margin: 6px 0 0 28px;
+  font-size: 13px;
+  color: #475569;
+  line-height: 1.7;
+}
+
+#vlab-conclusion {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d7deea;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 14px;
+  font-family: inherit;
+  resize: vertical;
+}
+
+#vlab-conclusion:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.vlab-report-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin: 8px 0 10px;
+}
+
+.vlab-report-hint {
+  font-size: 12px;
+  color: #475569;
+}
+
+.vlab-report {
+  border: 1px solid #eef2f8;
+  border-radius: 10px;
+  padding: 12px 16px;
+  min-height: 60px;
+  max-height: 420px;
+  overflow-y: auto;
+  background: #fcfdff;
+}
+
+.vlab-logs-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vlab-logs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 380px;
+  overflow-y: auto;
+  border: 1px solid #eef2f8;
+  border-radius: 10px;
+}
+
+.vlab-logs li {
+  display: flex;
+  gap: 10px;
+  padding: 8px 12px;
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: #475569;
+  border-bottom: 1px solid #f3f6fb;
+}
+
+.vlab-log-time {
+  color: #475569;
+  font-variant-numeric: tabular-nums;
+  flex-shrink: 0;
+}
+
+/* ---------------- Toast ---------------- */
+
+.vlab-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 32px;
+  transform: translateX(-50%) translateY(20px);
+  background: rgba(24, 49, 83, 0.95);
+  color: #fff;
+  font-size: 14px;
+  padding: 11px 22px;
+  border-radius: 999px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.25s ease;
+  z-index: 999;
+  max-width: 80vw;
+}
+
+.vlab-toast.is-show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ---------------- 响应式 ---------------- */
+
+@media (max-width: 1040px) {
+  .vlab-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vlab-col-right {
+    position: static;
+  }
+
+  .vlab-ai-section {
+    max-height: none;
+  }
+
+  .vlab-ai-messages {
+    max-height: 420px;
+  }
+
+  .vlab-record-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vlab-principle-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .vlab-info-grid,
+  .vlab-measure-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vlab-topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+/* ================================================================== */
+/* 实验平台 v2：进度条 / 化学 / 生物 / 地理组件                         */
+/* ================================================================== */
+
+.vlab-progress {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #2563eb;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 999px;
+  padding: 2px 10px;
+}
+
+.vlab-progress.is-done {
+  color: #15803d;
+  background: #dcfce7;
+  border-color: #bbf7d0;
+}
+
+.vlab-steps li.is-current {
+  border-color: #93c5fd;
+  background: #eff6ff;
+  box-shadow: 0 1px 4px rgba(37, 99, 235, 0.12);
+}
+
+.vlab-steps li.is-current .vlab-step-check {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #fff;
+}
+
+.vlab-steps li.is-current::after {
+  content: "← 当前进行到这里";
+  font-size: 12px;
+  color: #2563eb;
+  margin-left: 8px;
+}
+
+/* ---------------- 化学实验 ---------------- */
+
+.chem-stage {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  border: 1px solid #e5eaf2;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #fbfdff 0%, #f4f8ff 100%);
+  padding: 10px 16px;
+}
+
+.chem-svg {
+  width: 240px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.chem-dropper-body {
+  animation: dropper-sway 2.4s ease-in-out infinite;
+}
+
+@keyframes dropper-sway {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(3px); }
+}
+
+.chem-drop {
+  animation: drop-fall 0.9s ease-in forwards;
+}
+
+.chem-drop-2 {
+  animation-delay: 0.25s;
+}
+
+@keyframes drop-fall {
+  0% { transform: translateY(0); opacity: 1; }
+  80% { transform: translateY(66px); opacity: 1; }
+  100% { transform: translateY(72px); opacity: 0; }
+}
+
+.chem-current {
+  flex: 1;
+}
+
+.chem-result-text {
+  margin: 8px 0 0;
+  font-size: 14.5px;
+  color: #475569;
+}
+
+.chem-progress-text {
+  margin: 4px 0 10px;
+  font-size: 13.5px;
+  color: #475569;
+  line-height: 1.8;
+}
+
+.chem-color-dot {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  margin-right: 6px;
+  vertical-align: -2px;
+}
+
+.vlab-empty-inline {
+  color: #475569;
+  font-size: 12.5px;
+}
+
+/* ---------------- 生物实验 ---------------- */
+
+.bio-sliders {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 8px 0;
+}
+
+.bio-slider {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+  color: #475569;
+  min-width: 220px;
+}
+
+.bio-slider input[type="range"] {
+  width: 100%;
+  accent-color: #2563eb;
+}
+
+.bio-label-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.vlab-chip.is-pending {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #fff;
+}
+
+.vlab-chip.is-found {
+  background: #f0fdf4;
+  border-color: #86efac;
+  color: #15803d;
+}
+
+.bio-canvas-wrap {
+  border: 1px solid #e5eaf2;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0f172a;
+}
+
+.bio-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.bio-image {
+  transition: filter 0.2s ease;
+}
+
+.bio-hit {
+  cursor: pointer;
+}
+
+.bio-pin rect {
+  box-shadow: none;
+}
+
+/* ---------------- 地理实验 ---------------- */
+
+.season-sim .circuit-toolbar {
+  align-items: center;
+}
+
+.season-key-btn.is-on {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #fff;
+}
+
+.season-slider-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 8px 0;
+}
+
+.season-position-label {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #2563eb;
+  white-space: nowrap;
+}
+
+.season-canvas-wrap {
+  border: 1px solid #e5eaf2;
+  border-radius: 12px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #0b1120 0%, #1e293b 100%);
+}
+
+.vlab-formula {
+  color: #475569;
+  font-size: 12.5px;
+}
+
+/* ---------------- 目录页统计条 ---------------- */
+
+.vlab-catalog-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.vlab-stat-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 999px;
+  padding: 6px 16px;
+  color: #1e40af;
+  font-size: 13.5px;
+}
+
+.vlab-stat-chip strong {
+  font-size: 15px;
+  color: #1d4ed8;
+}
+
+/* ---------------- 浅色页面 hero 配色修正 ---------------- */
+/* courses-hero / hero-description 等类最初为深色课程页设计，
+   虚拟实验目录、测评、分析、实验指导等浅色页面复用后文字不可见，
+   这里统一覆盖为深色文字；深色课程页在下方恢复原配色。 */
+
+.courses-hero .courses-eyebrow {
+  color: #2563eb;
+}
+
+.courses-hero .hero-description {
+  color: #475569;
+}
+
+.courses-hero .courses-subtitle {
+  color: #475569;
+}
+
+.vlab-catalog-page .courses-hero h1 {
+  color: #183153;
+}
+
+.vlab-catalog-page .hero-description {
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 深色课程页恢复原配色（必须放在上面的覆盖之后） */
+
+.courses-page .courses-eyebrow {
+  color: #76c8ff;
+}
+
+.courses-page .courses-subtitle {
+  color: #afc2dc;
+}
+
+/* ============================================================
+   全站统一美化：导航 / 卡片 / 3D 实验室 / 虚拟实验整合区块
+   ============================================================ */
+
+:root {
+  --brand: #2563eb;
+  --brand-dark: #1d4ed8;
+  --brand-soft: #eff6ff;
+  --ink: #172033;
+  --ink-soft: #475569;
+  --line: #e7eaf0;
+  --card-radius: 16px;
+  --card-shadow: 0 1px 2px rgba(23, 32, 51, 0.05),
+    0 8px 24px -12px rgba(23, 32, 51, 0.12);
+  --card-shadow-hover: 0 2px 6px rgba(23, 32, 51, 0.06),
+    0 18px 38px -14px rgba(37, 99, 235, 0.22);
+}
+
+/* ---------- 顶部导航：吸底阴影 + 当前页高亮 ---------- */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 1px 0 var(--line);
+}
+
+.nav {
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.nav a {
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-weight: 500;
+  transition: background 0.18s ease, color 0.18s ease;
+}
+
+.nav a:hover {
+  background: var(--brand-soft);
+  color: var(--brand);
+}
+
+.nav a.is-active {
+  background: var(--brand);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ---------- 卡片悬停反馈 ---------- */
+
+.feature-card,
+.course-card,
+.stat-card.card-panel,
+.card-panel {
+  transition: box-shadow 0.22s ease, transform 0.22s ease;
+}
+
+.feature-card:hover,
+.course-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--card-shadow-hover);
+  border-color: rgba(37, 99, 235, 0.35);
+}
+
+.feature-card {
+  border: 1px solid var(--line);
+  border-radius: var(--card-radius);
+}
+
+/* ---------- 3D 实验室：场景切换标签 ---------- */
+
+.lab-tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 0 8% 18px;
+}
+
+.lab-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  color: var(--ink-soft);
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: var(--card-shadow);
+  transition: all 0.18s ease;
+}
+
+.lab-tab:hover {
+  color: var(--brand);
+  border-color: rgba(37, 99, 235, 0.4);
+}
+
+.lab-tab.is-active {
+  background: linear-gradient(135deg, var(--brand), #3b82f6);
+  border-color: transparent;
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 10px 22px -8px rgba(37, 99, 235, 0.45);
+}
+
+.lab-tab-icon {
+  font-size: 16px;
+}
+
+/* ---------- 3D 实验室：右侧控制面板 ---------- */
+
+.lab-panel-tip {
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+  margin: 10px 0 14px;
+}
+
+.lab-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.lab-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 13px;
+  color: var(--ink);
+}
+
+.lab-control > span {
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+.lab-control select {
+  flex: 1;
+  max-width: 140px;
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: #f8fafc;
+  font: inherit;
+  font-size: 13px;
+  color: var(--ink);
+}
+
+.lab-control-range input[type="range"] {
+  flex: 1;
+  accent-color: var(--brand);
+}
+
+.lab-control-range strong {
+  font-size: 13px;
+  color: var(--brand-dark);
+  min-width: 64px;
+  text-align: right;
+}
+
+.lab-status {
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  border: 1px solid transparent;
+}
+
+.lab-status[data-tone="ok"] {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+  color: #166534;
+}
+
+.lab-status[data-tone="warn"] {
+  background: #fffbeb;
+  border-color: #fde68a;
+  color: #92400e;
+}
+
+.lab-status[data-tone="bad"] {
+  background: #fef2f2;
+  border-color: #fecaca;
+  color: #b91c1c;
+}
+
+.lab-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.lab-metric-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 12px;
+  background: #f8fafc;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  font-size: 13px;
+}
+
+.lab-metric-row span {
+  color: var(--ink-soft);
+}
+
+.lab-metric-row strong {
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.lab-panel-link {
+  display: block;
+  text-align: center;
+}
+
+/* ---------- 虚拟实验目录：3D 标识与双按钮 ---------- */
+
+.vlab-tag-3d {
+  background: var(--brand-soft);
+  color: var(--brand-dark);
+  border: 1px solid rgba(37, 99, 235, 0.25);
+}
+
+.vlab-card-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.vlab-card-actions .vlab-card-action {
+  flex: 1;
+  text-align: center;
+}
+
+.vlab-card-action-3d {
+  flex: 0 0 auto !important;
+}
+
+/* ---------- 实验台 B 区：3D 入口 ---------- */
+
+.vlab-zone-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.vlab-3d-link {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--brand-dark);
+  background: var(--brand-soft);
+  border: 1px solid rgba(37, 99, 235, 0.25);
+  padding: 6px 12px;
+  border-radius: 999px;
+  transition: all 0.18s ease;
+}
+
+.vlab-3d-link:hover {
+  background: var(--brand);
+  color: #ffffff;
+}
+
+/* ---------- 实验指导页：虚拟实验直达卡片 ---------- */
+
+.experiment-direct {
+  margin-top: -46px;
+  position: relative;
+  z-index: 2;
+}
+
+.experiment-direct-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.experiment-direct-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #ffffff;
+  transition: all 0.18s ease;
+}
+
+.experiment-direct-card:hover {
+  border-color: rgba(37, 99, 235, 0.45);
+  box-shadow: var(--card-shadow-hover);
+  transform: translateY(-2px);
+}
+
+.experiment-direct-icon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.experiment-direct-body {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.experiment-direct-body strong {
+  font-size: 14px;
+  color: var(--ink);
+  line-height: 1.4;
+}
+
+.experiment-direct-body em {
+  font-style: normal;
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
+.experiment-direct-arrow {
+  margin-left: auto;
+  color: var(--brand);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.experiment-direct-extra {
+  margin: 14px 0 0;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+.experiment-direct-extra a {
+  color: var(--brand-dark);
+  font-weight: 600;
+}
+
+.experiment-direct-extra a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- 智能测评：结合虚拟实验出题 ---------- */
+
+.quiz-vlab-panel {
+  margin-bottom: 20px;
+}
+
+.quiz-vlab-head h2 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.quiz-vlab-head p {
+  margin: 0 0 14px;
+  font-size: 13px;
+  color: var(--ink-soft);
+  line-height: 1.7;
+}
+
+.quiz-vlab-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 10px;
+}
+
+.quiz-vlab-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 14px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: #f8fafc;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.16s ease;
+}
+
+.quiz-vlab-option:hover {
+  border-color: rgba(37, 99, 235, 0.4);
+}
+
+.quiz-vlab-option input[type="checkbox"] {
+  accent-color: var(--brand);
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.quiz-vlab-option.is-disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.quiz-vlab-name {
+  font-weight: 600;
+  color: var(--ink);
+  min-width: 0;
+}
+
+.quiz-vlab-option em {
+  margin-left: auto;
+  font-style: normal;
+  font-size: 12px;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+/* ---------- 学习分析：虚拟实验进展 ---------- */
+
+.vlab-progress-panel .recommend-heading {
+  margin-bottom: 14px;
+}
+
+.vlab-progress-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.vlab-progress-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 13px 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #f8fafc;
+}
+
+.vlab-progress-icon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.vlab-progress-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.vlab-progress-main header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 7px;
+}
+
+.vlab-progress-main strong {
+  font-size: 14px;
+  color: var(--ink);
+}
+
+.vlab-progress-percent {
+  font-size: 12px;
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+
+.vlab-progress-bar {
+  height: 8px;
+  border-radius: 999px;
+  background: #e2e8f0;
+  overflow: hidden;
+}
+
+.vlab-progress-bar span {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--brand), #3b82f6);
+  transition: width 0.4s ease;
+}
+
+.vlab-progress-chips {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.vlab-progress-chips .vlab-chip {
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  color: var(--ink-soft);
+}
+
+.vlab-progress-chips .vlab-chip.is-ok {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+  color: #166534;
+}
+
+.vlab-progress-link {
+  flex-shrink: 0;
+  font-size: 13px;
+}
+
+.chart-box-vlab {
+  height: 220px;
+}
+
+/* ---------- 响应式 ---------- */
+
+@media (max-width: 960px) {
+  .lab-tabs {
+    margin: 0 4% 16px;
+  }
+
+  .vlab-progress-item {
+    flex-wrap: wrap;
+  }
+
+  .vlab-progress-link {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ============================================================ */
+/* 可读性统一修复（第 2 轮）：按钮 / 灰字 / 深浅色作用域           */
+/* ============================================================ */
+
+/* 深色区域中的次级按钮恢复反白（浅色页面默认已是深字白底） */
+
+.hero .button-secondary,
+.laboratory-page .button-secondary,
+.planet-panel .button-secondary,
+.courses-page .button-secondary {
+  color: #ffffff;
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.55);
+}
+
+.hero .button-secondary:hover,
+.laboratory-page .button-secondary:hover,
+.planet-panel .button-secondary:hover,
+.courses-page .button-secondary:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.9);
+}
+
+/* 浅色背景上的 eyebrow 装饰字加深（深色 hero 保持浅蓝） */
+
+.features .eyebrow,
+.laboratory-preview .eyebrow,
+.card-panel .eyebrow {
+  color: var(--brand-dark);
+}
+
+/* ---------- 3D 实验室：深色面板内控件适配 ---------- */
+/* lab-* 控件默认按浅色面板设计，太阳系/电路/公转共用深色 planet-panel，
+   这里统一替换为深色可读配色。 */
+
+.planet-panel .lab-panel-tip {
+  color: #b6c2d9;
+}
+
+.planet-panel .lab-control {
+  color: #eaf2ff;
+}
+
+.planet-panel .lab-control > span {
+  color: #bcc8dd;
+}
+
+.planet-panel .lab-control select {
+  background: #0d1829;
+  color: #eaf2ff;
+  border-color: #3a4c66;
+}
+
+.planet-panel .lab-control-range strong {
+  color: #7db4ff;
+}
+
+.planet-panel .lab-metric-row {
+  background: #0d1829;
+  border-color: #2a3a52;
+}
+
+.planet-panel .lab-metric-row span {
+  color: #9db0cd;
+}
+
+.planet-panel .lab-metric-row strong {
+  color: #ffffff;
+}
+
+/* ---------- 虚拟实验目录卡片：浅色页面使用浅色卡片 ---------- */
+/* .course-card 原为深色课程页设计，目录页复用后标题/正文对比度不足 */
+
+.vlab-catalog-page .vlab-card {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  box-shadow: var(--card-shadow);
+}
+
+.vlab-catalog-page .vlab-card h3 {
+  color: #183153;
+}
+
+.vlab-catalog-page .vlab-card p,
+.vlab-catalog-page .vlab-card-objectives {
+  color: #475569;
+}
+
+.vlab-catalog-page .vlab-card:hover {
+  border-color: rgba(37, 99, 235, 0.35);
+  box-shadow: var(--card-shadow-hover);
+}
+
+/* ---------- 首页数据一览条 ---------- */
+
+.home-stats {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  max-width: 1280px;
+  margin: -58px auto 0;
+  padding: 0 8%;
+}
+
+.home-stat {
+  padding: 20px 16px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: var(--card-shadow);
+  text-align: center;
+}
+
+.home-stat strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--brand);
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.home-stat span {
+  color: #475569;
+  font-size: 13px;
+}
+
+@media (max-width: 700px) {
+  .home-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: -46px;
+    padding: 0 5%;
+  }
+}
+
+/* ---------- 3D 实验室：观察任务清单（深色面板） ---------- */
+
+.lab-checklist-title {
+  margin: 14px 0 8px;
+  color: #eaf2ff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.lab-checklist {
+  list-style: none;
+  margin: 0 0 14px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.lab-checklist li {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 12px;
+  border: 1px solid #2a3a52;
+  border-radius: 9px;
+  background: #0d1829;
+  color: #bcc8dd;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.lab-checklist .lab-check-dot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid #56698a;
+  border-radius: 50%;
+  color: #9db0cd;
+  font-size: 11px;
+  flex-shrink: 0;
+}
+
+.lab-checklist li.is-done {
+  border-color: rgba(34, 197, 94, 0.55);
+  background: rgba(34, 197, 94, 0.12);
+  color: #d9ffe9;
+}
+
+.lab-checklist li.is-done .lab-check-dot {
+  background: #22c55e;
+  border-color: #22c55e;
+  color: #ffffff;
+}
+
+/* ---------- 目录页 hero：3D 实验室入口 ---------- */
+
+.vlab-hero-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.vlab-hero-hint {
+  color: #475569;
+  font-size: 13px;
+}
+
+/* ---------- 实验台 B 区：3D 可操作实验台与视图切换 ---------- */
+
+.vlab-op-switch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.vlab-op-switch-label {
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.vlab-op-modes {
+  display: inline-flex;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #f1f5f9;
+}
+
+.vlab-op-mode {
+  border: none;
+  border-radius: 7px;
+  padding: 6px 14px;
+  background: transparent;
+  color: #475569;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.vlab-op-mode:hover {
+  color: #183153;
+}
+
+.vlab-op-mode.is-active {
+  background: var(--brand);
+  color: #ffffff;
+}
+
+.vlab-3d-stage {
+  position: relative;
+  height: 520px;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #0b1220;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+}
+
+.vlab-3d-canvas {
+  position: absolute;
+  inset: 0;
+}
+
+.vlab-3d-canvas canvas {
+  display: block;
+}
+
+.vlab-3d-toolbar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  z-index: 3;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(8, 15, 30, 0.78);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+.vlab-3d-toolbar .circuit-control {
+  color: #9fb1cc;
+}
+
+.vlab-3d-toolbar .circuit-control select {
+  background: #101b30;
+  border-color: #2a3a52;
+  color: #e2e8f0;
+}
+
+.vlab-3d-toolbar .circuit-control select option {
+  background: #101b30;
+  color: #e2e8f0;
+}
+
+.vlab-3d-status {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  z-index: 3;
+  max-width: 55%;
+  padding: 7px 12px;
+  border-radius: 9px;
+  background: rgba(8, 15, 30, 0.78);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  color: #cbd5e1;
+  font-size: 13px;
+  backdrop-filter: blur(8px);
+}
+
+.vlab-3d-status[data-tone="active"] {
+  border-color: rgba(34, 211, 238, 0.55);
+  color: #a5f3fc;
+}
+
+.vlab-3d-hint {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  z-index: 3;
+  margin: 0;
+  padding: 7px 12px;
+  border-radius: 9px;
+  background: rgba(8, 15, 30, 0.66);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  color: #9fb1cc;
+  font-size: 12px;
+  backdrop-filter: blur(8px);
+}
+
+@media (max-width: 720px) {
+  .vlab-3d-stage {
+    height: 420px;
+  }
+
+  .vlab-3d-status {
+    max-width: calc(100% - 24px);
+  }
+
+  .vlab-3d-hint {
+    display: none;
+  }
+}
+
+/* ============================================================ */
+/* 实验指导 / 智能测评：实验选择卡片（pick-*）                    */
+/* ============================================================ */
+
+.pick-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.pick-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px 18px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--card-radius);
+  background: #ffffff;
+  box-shadow: var(--card-shadow);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease,
+    transform 0.15s ease;
+}
+
+.pick-card:hover {
+  border-color: rgba(37, 99, 235, 0.35);
+  box-shadow: var(--card-shadow-hover);
+  transform: translateY(-2px);
+}
+
+.pick-card.is-locked {
+  background: #f8fafc;
+}
+
+.pick-card.is-locked:hover {
+  transform: none;
+  border-color: var(--line);
+}
+
+.pick-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.pick-card-icon {
+  font-size: 30px;
+  line-height: 1;
+}
+
+.pick-card-tags {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.pick-badge {
+  display: inline-block;
+  padding: 2px 9px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+
+.pick-badge-done {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+  color: #166534;
+}
+
+.pick-badge-3d {
+  background: #eef2ff;
+  border-color: #c7d2fe;
+  color: #3730a3;
+}
+
+.pick-badge-lock {
+  background: #f1f5f9;
+  border-color: #e2e8f0;
+  color: #64748b;
+}
+
+.pick-card h3 {
+  margin: 2px 0 0;
+  font-size: 16px;
+  color: var(--ink);
+}
+
+.pick-card-summary {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 62px;
+}
+
+.pick-card-meta {
+  margin: 0;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.pick-card-note {
+  margin: 0;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.pick-card .button {
+  margin-top: auto;
+  width: 100%;
+  text-align: center;
+}
+
+/* ---------- 学习分析：实验卡可点击 / 单实验详情 ---------- */
+
+.vlab-progress-item.is-clickable {
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.vlab-progress-item.is-clickable:hover {
+  border-color: rgba(37, 99, 235, 0.4);
+  background: #ffffff;
+  box-shadow: var(--card-shadow);
+}
+
+.vlab-progress-item.is-clickable:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+.vlab-progress-detail-arrow {
+  flex-shrink: 0;
+  font-size: 12px;
+  color: var(--brand);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.exp-detail-nav {
+  margin-bottom: 14px;
+}
+
+.exp-detail-loading {
+  text-align: center;
+  padding: 48px 20px;
+}
+
+.exp-detail-loading h2 {
+  margin-top: 14px;
+  font-size: 17px;
+  color: var(--ink);
+}
+
+.exp-detail-hero {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  margin-bottom: 16px;
+}
+
+.exp-detail-icon {
+  font-size: 42px;
+  line-height: 1;
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: var(--brand-soft);
+}
+
+.exp-detail-heading h2 {
+  margin: 4px 0 8px;
+  font-size: 22px;
+  color: var(--ink);
+}
+
+.exp-detail-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 0 0 10px;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+.exp-detail-meta-item {
+  color: var(--ink-soft);
+}
+
+.exp-detail-principle {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+}
+
+.exp-detail-cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.exp-detail-stat {
+  padding: 16px;
+}
+
+.exp-detail-grid {
+  margin-bottom: 16px;
+}
+
+.exp-detail-block h3 {
+  margin: 0 0 12px;
+  font-size: 15px;
+  color: var(--ink);
+}
+
+.exp-step-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.exp-step-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+.exp-step-list li.is-done {
+  border-color: #bbf7d0;
+  background: #f0fdf4;
+}
+
+.exp-step-check {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  background: #e2e8f0;
+  color: #475569;
+}
+
+.exp-step-list li.is-done .exp-step-check {
+  background: #22c55e;
+  color: #ffffff;
+}
+
+.exp-step-list strong {
+  display: block;
+  font-size: 13.5px;
+  color: var(--ink);
+  margin-bottom: 2px;
+}
+
+.exp-step-list p {
+  margin: 0;
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
+
+.exp-data-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.exp-data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.exp-data-table th,
+.exp-data-table td {
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.exp-data-table th {
+  background: #f8fafc;
+  font-weight: 600;
+  color: #334155;
+}
+
+.exp-data-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.exp-data-note {
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.exp-conclusion-text {
+  margin: 0;
+  padding: 12px 14px;
+  background: #f8fafc;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: var(--ink);
+  white-space: pre-wrap;
+}
+
+.exp-report-details summary {
+  cursor: pointer;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--brand);
+  margin-bottom: 8px;
+}
+
+.exp-log-list,
+.exp-quiz-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.exp-log-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 12.5px;
+  line-height: 1.6;
+}
+
+.exp-log-list time {
+  color: #94a3b8;
+  font-variant-numeric: tabular-nums;
+  flex-shrink: 0;
+  width: 64px;
+}
+
+.exp-log-type {
+  flex-shrink: 0;
+  padding: 1px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  background: #eef2ff;
+  color: #3730a3;
+}
+
+.exp-log-type-measure {
+  background: #ecfeff;
+  color: #155e75;
+}
+
+.exp-log-type-ai {
+  background: #f0fdf4;
+  color: #166534;
+}
+
+.exp-log-list p {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.exp-quiz-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.exp-quiz-list .quiz-history-score {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+}
+
+.exp-quiz-list p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--ink);
+}
+
+.exp-quiz-list em {
+  font-size: 12px;
+  color: var(--ink-soft);
+  font-style: normal;
+}
+
+.exp-detail-action {
+  margin-top: 10px;
+}
+
+.exp-detail-actions h3 {
+  margin: 0 0 12px;
+  font-size: 15px;
+  color: var(--ink);
+}
+
+@media (max-width: 960px) {
+  .exp-detail-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .vlab-progress-detail-arrow {
+    width: 100%;
+    text-align: right;
+  }
+}
+
+@media (max-width: 600px) {
+  .exp-detail-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .exp-detail-hero {
+    flex-direction: column;
+  }
 }

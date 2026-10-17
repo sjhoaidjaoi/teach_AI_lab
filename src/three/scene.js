@@ -1,6 +1,7 @@
 import * as THREE from "three";
 import { OrbitControls } from
   "three/addons/controls/OrbitControls.js";
+
 const PLANETS = [
   {
     name: "水星",
@@ -132,6 +133,16 @@ controls.target.set(0, 0, 0);
 controls.update();
   // 环境光
   scene.add(new THREE.AmbientLight("#ffffff", 0.8));
+
+// 让太阳发出照亮周围的光
+const sunLight = new THREE.PointLight(
+  0xffffff,
+  180,
+  100
+);
+
+scene.add(sunLight);
+
   // 太阳
   const sunGeometry = new THREE.SphereGeometry(1, 48, 48);
   const sunMaterial = new THREE.MeshBasicMaterial({
@@ -165,6 +176,8 @@ controls.update();
   const pointer = new THREE.Vector2();
   let selectedObject = null;
   const planetObjects = [];
+
+
   // 创建八大行星
   for (const data of PLANETS) {
     // 轨道线
